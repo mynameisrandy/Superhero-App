@@ -10,12 +10,25 @@ router.get('/', function(req, res, next) {
 	
 	// Get a list of students
 	Character.find(function(err, characters) {
+		// Errors
 		if(err) return next(err);
 		// res.json(characters); // OUTPUT JSON 
 		// res.render('index', {title: 'Characters Page'});
 		
 		var data = JSON.stringify(characters);
 		res.render('index', { title: 'Characters Page', list:data });
+	});
+});
+
+// Get Character Details
+router.get('/:id', function(req, res, next) {
+	// Get character id
+	Character.findById(req.params.id, function(err, character) {
+		// Errors
+		if(err) return next(err);
+		// Get Character Data
+		var data = JSON.stringify(character);
+		res.render('detail', { title: 'Character Details Page', details:data });
 	});
 });
 

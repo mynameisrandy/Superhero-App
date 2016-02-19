@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+   	<% var character = JSON.parse(details); %>    
+    <h1><%= title %></h1>
+	
+
+	<h2>Character name: <%= character.alias; %></h2>
+	<p> Real Name: <%= character.name.fname + character.name.lname; %></p>
+	<p> City: <%= character.city %> </p>
+	<p> Bio: <%= character.bio %> </p>
+	<!-- <p> Affiliation: <%= character.affiliation %> </p> -->
+	
+	<% var affiliation = character.affiliation; %>
+
+	<ul>
+		<% for (var i=0; i<affiliation.length; i++) { %>
+		<li> <strong>Group name:</strong> <%= affiliation[i].group + ' ' + affiliation[i].group_bio + ' ' + affiliation[i].members[i].member_name + ' ' + affiliation[i].members[i].member_bio;%></li>	
+		<%  } %>
+	</ul>
+
+
+	<img src="/images/<%= character.img %>">
+
+
+  </body>
+</html>
+
