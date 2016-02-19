@@ -4,6 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+
+
+var routes = require('./routes/routes');
+
 // 1 - Connect to the database
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/meanapp', function(err) {
@@ -15,11 +19,11 @@ mongoose.connect('mongodb://localhost/meanapp', function(err) {
 });
 
 
-
-var routes = require('./routes/index');
+// ROUTES
+// var routes = require('./routes/routes');
+// var routes = require('./routes/index');
 // var users = require('./routes/users');
-var characters = require('./routes/characters');
-
+// var characters = require('./routes/characters');
 
 var app = express();
 
@@ -35,9 +39,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Default routes
 app.use('/', routes);
-// app.use('/users', users);
-app.use('/characters', characters);
+// app.use('/users', users); // users
+// app.use('/characters', characters); // characters
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
