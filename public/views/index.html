@@ -3,8 +3,18 @@
 <head>
 	<title>Superheroes App</title>
 	<link href="../stylesheets/style.css" type="text/css" rel="stylesheets">
+	<script src="../javascripts/angular.min.js"></script>
+	<script src="../javascripts/angular-ui-router.js"></script>
+	<script src="../javascripts/angular-animate.min.js"></script>
+	<script src="../javascripts/angularApp.js"></script>
 </head>
-<body>
-	hello
+<body data-ng-app="superheroApp">
+
+	<div id="container">
+		<h1>Superheroes Guide</h1>
+		<ui-view>
+		</ui-view>	
+	</div>
+	
 </body>
 </html>
