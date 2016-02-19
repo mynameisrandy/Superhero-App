@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Superheroes App</title>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:700,400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 	<link rel="stylesheet" href="../stylesheets/foundation.css" />
     <script src="../javascripts/vendor/modernizr.js"></script>
@@ -11,10 +12,13 @@
 <body data-ng-app="superheroApp">
 
 	<div id="container">
-		<h1>Superheroes Guide</h1>
+		<header>
+			<h1 class="text-center">Superheroes Guide</h1>
+		</header>
 		<ui-view>
 		</ui-view>	
 	</div>
+
 	<!-- Foundation 5 Scripts -->
 	<script src="../javascripts/vendor/jquery.js"></script>
     <script src="../javascripts/foundation.min.js"></script>

@@ -19,5 +19,15 @@ router.get('/characters', function(req, res, next) {
 });
 
 
+// Get Characters
+router.get('/characters/:id', function(req, res, next) {
+	// Character Model
+	Character.findById(req.params.id, function(err, character) {
+		if(err) return(err);
+		res.json(character);
+	});
+});
+
+
 
 module.exports = router;

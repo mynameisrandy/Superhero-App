@@ -8,7 +8,12 @@ superheroApp.config(['$stateProvider', '$urlRouterProvider', function($stateProv
 		templateUrl: 'views/list.html',
 		controller: 'ListController'
 	});
-
+	$stateProvider
+		.state('details', {
+		url: '/details/{characterId}',
+		templateUrl: 'views/details.html',
+		controller: 'detailsController'
+	});
 	$urlRouterProvider.otherwise('/list');
 }]);
 
@@ -18,6 +23,20 @@ superheroApp.controller('ListController', ['$scope', '$http', function($scope, $
 	$http.get('/characters').then(function(characters) {
 		console.log(characters.data);
 		$scope.characters = characters.data;
+	});
+
+}]);
+
+
+// Controller
+superheroApp.controller('detailsController', ['$scope', '$http','$stateParams', function($scope, $http, $stateParams) {
+	var ID = $stateParams.characterId;
+
+	$http.get('/characters/'+ID).then(function(characters) {
+		console.log(characters.data.name);
+		$scope.alias = characters.data.alias;
+		$scope.city = characters.data.city;
+		$scope.name = characters.data.name;
 
 	});
 

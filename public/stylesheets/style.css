@@ -1,14 +1,50 @@
 body {
-
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: red;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 700;
 }
 
-a {
-  color: #00B7FF;
+
+
+ul li a {
+  color: #ffffff;
+}
+
+ul li a:hover
+{
+	color: #242424;
 }
 
 #container
 {
-	background-color:  #F1DDC2;
+	/*background-color:  #7889A3;*/
+	background: -moz-linear-gradient(top, #C56486, #634062);
+}
+
+h1
+{
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	color: white;
+}
+
+header
+{
+	background-color: white;
+	
+}
+
+header h1
+{
+	color: #242424;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 300;
+}
+
+#characters
+{
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 300;
+	background-size: cover;
+	height: 100%;
 }
