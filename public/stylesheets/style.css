@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: red;
 }
@@ -8,3 +8,7 @@ a {
   color: #00B7FF;
 }
 
+#container
+{
+	background-color:  #F1DDC2;
+}

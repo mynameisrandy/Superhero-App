@@ -1,1 +1,10 @@
-list page
+<section id="characters">
+	<h1>Characters List</h1>
+	<ul>
+		<li data-ng-repeat="character in characters">
+
+			<a href="#/details/{{character._id}}">{{character.alias}}</a>
+			
+		</li>
+	</ul>
+</section>
