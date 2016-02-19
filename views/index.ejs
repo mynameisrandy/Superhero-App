@@ -5,7 +5,17 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+	<!-- Variable -->
+	<% var characters = JSON.parse(list); %>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+	<!-- unorder List -->
+	<ul>
+		<!-- For Loop -->
+		<% for (var i=0; i<characters.length; i++) { %>
+		<li> <a href="http://localhost:3000/characters/<%=characters[i]._id %>"> <%= characters[i].alias; %>  </a></li>
+		<%	} %>
+	</ul>
+
+
   </body>
 </html>
