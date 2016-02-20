@@ -1,50 +1,86 @@
-body {
-	font-family: 'Merriweather Sans', sans-serif;
-	font-weight: 700;
-}
-
-
-
-ul li a {
-  color: #ffffff;
-}
-
-ul li a:hover
+.hidden
 {
-	color: #242424;
+	display: none;
 }
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
 
 #container
 {
-	/*background-color:  #7889A3;*/
-	background: -moz-linear-gradient(top, #C56486, #634062);
+	background-image: url(../images/bg1.png);
+	background-size: cover;
+	/*background-color: #242424;*/
+	height: 100%;
 }
 
-h1
+
+#home
 {
-	font-family: 'Merriweather Sans', sans-serif;
-	font-weight: 700;
-	font-size: 24px;
+	padding-top: 20%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+
+#home h1
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;	
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 2px;
+}
+
+#home a
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;	
+	text-transform: uppercase;
 	color: white;
 }
 
-header
-{
-	background-color: white;
-	
-}
-
-header h1
+#home a:hover
 {
 	color: #242424;
-	font-family: 'Merriweather Sans', sans-serif;
+}
+
+#guide
+{
+	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
+	color: #EE293D;
 }
 
 #characters
 {
-	font-family: 'Merriweather Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	background-size: cover;
 	height: 100%;
+}
+
+#characters h1
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+.charList ul
+{
+	list-style-type: none;
+	line-height: 50px;
+}
+
+.charList ul li a
+{
+	color: #ffffff;
+}
+
+.charList ul li a:hover
+{
+	color: #EE293D;
 }

@@ -1,12 +1,13 @@
 <section id="characters" class="row">
-	<h1>Characters List</h1>
-	<div class="small-12 large-12 columns">
-		<ul>
-			<li data-ng-repeat="character in characters">
-
-				<a href="#/details/{{character._id}}">{{character.alias}}</a>
-		
-			</li>
-		</ul>
-	</div>
+	<center>
+		<h1>Characters List</h1>
+		<div class="small-12 large-12 columns charList">
+			<ul>
+				<li data-ng-repeat="character in characters">
+					<a href="#/details/{{character._id}}">{{character.alias}}</a>
+				</li>
+			</ul>
+		</div>
+	</center>
 </section>
+

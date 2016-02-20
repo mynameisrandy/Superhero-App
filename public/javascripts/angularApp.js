@@ -1,23 +1,36 @@
+
+
 var superheroApp = angular.module('superheroApp', ['ui.router']);
 
-// CONFIG
+//-------------------CONFIG---------------------//
+
 superheroApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+	$stateProvider.state('home',{
+		url:'/home',
+		templateUrl:'views/home.html'
+	});
+
 	$stateProvider
 		.state('list', {
 		url: '/list',
 		templateUrl: 'views/list.html',
 		controller: 'ListController'
 	});
+
 	$stateProvider
 		.state('details', {
 		url: '/details/{characterId}',
 		templateUrl: 'views/details.html',
 		controller: 'detailsController'
 	});
-	$urlRouterProvider.otherwise('/list');
+
+	$urlRouterProvider.otherwise('/home');
 }]);
 
-// Controller
+//-------------------CONTROLLERS---------------------//
+
+
+// List
 superheroApp.controller('ListController', ['$scope', '$http', function($scope, $http) {
 
 	$http.get('/characters').then(function(characters) {
@@ -28,7 +41,7 @@ superheroApp.controller('ListController', ['$scope', '$http', function($scope, $
 }]);
 
 
-// Controller
+// Details
 superheroApp.controller('detailsController', ['$scope', '$http','$stateParams', function($scope, $http, $stateParams) {
 	var ID = $stateParams.characterId;
 
@@ -37,7 +50,5 @@ superheroApp.controller('detailsController', ['$scope', '$http','$stateParams', 
 		$scope.alias = characters.data.alias;
 		$scope.city = characters.data.city;
 		$scope.name = characters.data.name;
-
 	});
-
 }]);
