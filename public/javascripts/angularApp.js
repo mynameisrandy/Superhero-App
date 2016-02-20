@@ -27,6 +27,7 @@ superheroApp.config(['$stateProvider', '$urlRouterProvider', function($stateProv
 	$urlRouterProvider.otherwise('/home');
 }]);
 
+
 //-------------------CONTROLLERS---------------------//
 
 
@@ -44,11 +45,12 @@ superheroApp.controller('ListController', ['$scope', '$http', function($scope, $
 // Details
 superheroApp.controller('detailsController', ['$scope', '$http','$stateParams', function($scope, $http, $stateParams) {
 	var ID = $stateParams.characterId;
-
 	$http.get('/characters/'+ID).then(function(characters) {
 		console.log(characters.data.name);
 		$scope.alias = characters.data.alias;
 		$scope.city = characters.data.city;
 		$scope.name = characters.data.name;
+		$scope.image = characters.data.image;
+		$scope.affiliation = characters.data.affiliation;
 	});
 }]);

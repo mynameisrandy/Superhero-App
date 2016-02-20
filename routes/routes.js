@@ -10,8 +10,6 @@ router.get('/', function(req, res) {
 });
 
 
-
-
 // Get Characters
 router.get('/characters', function(req, res, next) {
 	// Character Model

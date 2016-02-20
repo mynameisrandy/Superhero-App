@@ -18,6 +18,64 @@ body {
 }
 
 
+#header
+{
+	max-width: 100%;
+	padding: 50px 0 30px 0;
+	background-color: #2196F3;
+	box-shadow: 0 7px 8px -7px #242424;
+}
+
+#header h1
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+}
+
+#header p 
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+#header a
+{
+	color: #242424;
+}
+
+#header a:hover
+{
+	color: #BBDEFB;
+}
+
+nav ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	text-align: center;
+}
+
+nav ul li
+{
+	display: inline;
+}
+
+nav ul li a 
+{
+	display: inline-block;
+	padding: 10px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
 #home
 {
 	padding-top: 20%;
@@ -66,7 +124,8 @@ body {
 #characters h1
 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
+	font-weight: 500;
+	color: white;
 }
 
 .charList ul
@@ -77,10 +136,16 @@ body {
 
 .charList ul li a
 {
-	color: #ffffff;
+	color: #242424;
 }
 
 .charList ul li a:hover
 {
-	color: #EE293D;
+	color: #2196F3;
 }
+
+#characterDetail
+{
+	padding-top: 20px;
+}
+
