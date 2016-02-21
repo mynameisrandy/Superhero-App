@@ -6,6 +6,7 @@
 	<title>Superheroes App - Home</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway:700,300,500' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/animate.css">
 	<link rel="stylesheet" href="../stylesheets/foundation.min.css" />
     <script src="../javascripts/vendor/modernizr.js"></script>
 </head>
@@ -13,9 +14,9 @@
 <h1 class="hidden">Superhero App</h1>
 
 	<div id="container">
-		<ui-view>
+		<div class="page {{ pageClass }}" ui-view>
 			<h1 class="hidden">Views Goes Here</h1>
-		</ui-view>	
+		<div>	
 	</div>
 
 	<!-- Foundation 5 Scripts -->

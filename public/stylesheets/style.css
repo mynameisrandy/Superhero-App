@@ -81,6 +81,7 @@ nav ul li a
 	padding-top: 20%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
+
 }
 
 
@@ -119,6 +120,7 @@ nav ul li a
 	font-weight: 300;
 	background-size: cover;
 	height: 100%;
+	padding-top: 3em;
 }
 
 #characters h1
@@ -147,5 +149,37 @@ nav ul li a
 #characterDetail
 {
 	padding-top: 20px;
+}
+
+/* ngAnimate*/
+.ng-enter           
+{ 
+    animation: bounceIn 0.5s  ease-in; 
+}
+
+.ng-leave           
+{ 
+    animation: fadeOut 0s  ease-in;  
+}
+
+/* List Page */
+.list.ng-enter         
+{ 
+    animation: fadeIn 0.5s  ease-in; 
+}
+    
+.list.ng-leave         
+{ 
+   	animation:fadeInLeft 0s  ease-in; 
+}
+
+/* Detail Page */
+.details.ng-enter        
+{ 
+    animation:fadeInLeft 0.5s  ease-in; 
+}
+
+.details.ng-leave        { 
+   	animation:fadeOut 0s  ease-in; 
 }
 

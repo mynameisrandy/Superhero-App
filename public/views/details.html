@@ -1,15 +1,14 @@
 <header id="header" class="row">
-	<div class="small-12 large-12 columns">
-		<h1 class="text-center">{{alias}}</h1>
-		<p class="text-center"><a href="#/list">Back</a></p>
-	</div>
-</header>
+		<div class="small-12 large-12 columns">
+			<h1 class="text-center">{{alias}}</h1>
+			<p class="text-center"><a href="#/list">Back</a></p>
+		</div>
+	</header>
 
-<section id="characterDetail" class="row">
-	<div class="small-12 large-12 columns">
-		<p>City: {{city}}</p>
-		<p ng-repeat="names in name">Name: {{names}} - {{names}}</p>
-		<p ng-repeat="affiliations in affiliation">Affiliations: {{affiliations.group}} - {{affiliations.group_bio}}</p>
-	</div>
-</section>
-
+	<section id="characterDetail" class="row animate">
+		<div class="small-12 large-12 columns">
+			<p>City: {{city}}</p>
+			<p ng-repeat="names in name">Name: {{names}} - {{names}}</p>
+			<p ng-repeat="affiliations in affiliation">Affiliations: {{affiliations.group}} - {{affiliations.group_bio}}</p>
+		</div>
+	</section>
