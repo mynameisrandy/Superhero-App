@@ -73,7 +73,6 @@ superheroApp.controller('detailsController', ['$scope', '$http','$stateParams', 
 }]);
 
 
-
 // List
 superheroApp.controller('movieController', ['$scope', '$http', function($scope, $http) {
 	$http.get('/movies').then(function(movies) {

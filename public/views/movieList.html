@@ -16,12 +16,11 @@
 <section id="characters" class="row">
 	<center>
 		<h1>Movies List</h1>
-		<div class="small-12 large-12 columns charList">
-			<ul>
-				<li data-ng-repeat="movie in movies">
-					<a href="#/movieDetails/{{movie._id}}">{{movie.movieName}}</a>
-				</li>
-			</ul>
+		<div class="small-12 medium-4 columns charList" data-ng-repeat="movie in movies">
+			<figure>
+				<img ng-src="../images/{{movie.movieImage}}" alt="film image" />
+			</figure>
+			<p><a href="#/movieDetails/{{movie._id}}">{{movie.movieName}}</a></p>
 		</div>
 	</center>
 </section>

@@ -6,7 +6,10 @@
 	</header>
 
 	<section id="characterDetail" class="row animate">
-		<div class="small-12 large-12 columns">
+		<div class="small-12 medium-4 columns">
+			<img ng-src="../images/{{image}}" alt="character image" />
+			</div>
+		<div class="small-12 medium-8 columns">
 			<p>City: {{city}}</p>
 			<p ng-repeat="names in name">Name: {{names}} - {{names}}</p>
 			<p ng-repeat="affiliations in affiliation">Affiliations: {{affiliations.group}} - {{affiliations.group_bio}}</p>
