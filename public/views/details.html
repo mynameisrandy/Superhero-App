@@ -1,4 +1,5 @@
 <header id="header" class="row">
+	<h1 class="hidden">Character Name</h1>
 		<div class="small-12 large-12 columns">
 			<h1 class="text-center">{{alias}}</h1>
 			<p class="text-center"><a href="#/list">Back</a></p>
@@ -6,10 +7,12 @@
 	</header>
 
 	<section id="characterDetail" class="row">
+		<h1 class="hidden">Character Details Information</h1>
 		<div class="small-12 medium-4 columns">
 			<img ng-src="../images/{{image}}" alt="character image" />
 			</div>
 		<div class="small-12 medium-8 columns">
+			<h1 class="hidden">Character info</h1>
 			<p>City: {{city}}</p>
 			<p>Name: {{name.fname}} {{name.lname}}</p>
 			<p ng-repeat="affiliations in affiliation">Affiliations: {{affiliations.group}} - {{affiliations.group_bio}}</p>

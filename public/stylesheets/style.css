@@ -169,15 +169,16 @@ body {
 
 .ng-leave           
 { 
-    animation: fadeOut 0s  ease-in;  
+    animation: zoomOut 0s  ease-in;  
 }
 
 /* List Page */
 .list.ng-enter         
 { 
-    animation: fadeIn 0.5s  ease-in; 
+    animation: fadeIn 0.5s  ease-in;
+     
+
 }
-    
 .list.ng-leave         
 { 
    	animation:fadeInLeft 0s  ease-in; 
@@ -190,6 +191,6 @@ body {
 }
 
 .details.ng-leave        { 
-   	animation:fadeOut 0s  ease-in; 
+   	animation:zoomOut 0s  ease-in; 
 }
 
