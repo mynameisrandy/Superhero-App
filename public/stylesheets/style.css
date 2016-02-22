@@ -52,7 +52,7 @@ body {
 	color: #BBDEFB;
 }
 
-nav ul
+.mainNav ul
 {
 	list-style-type: none;
 	margin: 0;
@@ -60,18 +60,21 @@ nav ul
 	text-align: center;
 }
 
-nav ul li
+.mainNav ul li
 {
 	display: inline;
 }
 
-nav ul li a 
+.mainNav ul li a 
 {
 	display: inline-block;
 	padding: 10px;
 	color: white;
 	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
 	letter-spacing: 2px;
+	font-size: .8em;
 }
 
 
@@ -112,6 +115,11 @@ nav ul li a
 	color: #EE293D;
 }
 
+.homeBut
+{
+	padding-top: 2em;
+}
+
 #characters
 {
 	font-family: 'Raleway', sans-serif;
@@ -140,10 +148,20 @@ nav ul li a
 
 #characterDetail
 {
-	padding-top: 20px;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
-/* ngAnimate*/
+.charImage img
+{
+	-moz-box-shadow: 0px 1px 7px #000000;
+	-webkit-box-shadow: 0px 1px 7px #000000;
+	box-shadow: 0px 1px 7px #000000;
+}
+
+
+
+/*----------------ngAnimate----------------*/
 .ng-enter           
 { 
     animation: bounceIn 0.5s  ease-in; 

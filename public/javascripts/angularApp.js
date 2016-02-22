@@ -79,7 +79,7 @@ superheroApp.controller('movieController', ['$scope', '$http', function($scope, 
 		console.log(movies.data);
 		$scope.movies = movies.data;
 		// ngAnimate 
-		// $scope.pageClass = 'list';
+		$scope.pageClass = 'list';
 	});
 }]);
 
@@ -91,6 +91,7 @@ superheroApp.controller('moviedetailsController', ['$scope', '$http','$statePara
 
 		$scope.movieName = movies.data.movieName;
 		$scope.movieYear = movies.data.movieYear;
+		$scope.movieImage = movies.data.movieImage;
 		$scope.moviveDesc = movies.data.moviveDesc;
 		$scope.director = movies.data.director;
 		$scope.writers = movies.data.writers;

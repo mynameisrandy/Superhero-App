@@ -3,7 +3,7 @@
 		<h1 class="text-center">Superhero App</h1>
 	</div>
 	<div class="small-12 columns">
-		<nav>
+		<nav class="mainNav">
 			<ul>
 				<li><a href="#/home">Home</a></li>
 				<li><a href="#/list">Characters</a></li>
@@ -17,7 +17,7 @@
 	<center>
 		<h1>Movies List</h1>
 		<div class="small-12 medium-4 columns charList" data-ng-repeat="movie in movies">
-			<figure>
+			<figure class="charImage">
 				<img ng-src="../images/{{movie.movieImage}}" alt="film image" />
 			</figure>
 			<p><a href="#/movieDetails/{{movie._id}}">{{movie.movieName}}</a></p>

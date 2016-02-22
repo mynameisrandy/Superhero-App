@@ -5,9 +5,16 @@
 		</div>
 	</header>
 
-	<section id="characterDetail" class="row animate">
-		<div class="small-12 large-12 columns">
+
+		<section id="characterDetail" class="row">
+		<div class="small-12 medium-4 columns">
+			<img ng-src="../images/{{movieImage}}" alt="film image" />
+		</div>
+		<div class="small-12 medium-8 columns">
 			<p>Year: {{movieYear}}</p>
-			<p ng-repeat="writer in writers">Writer: {{writer.writer}}</p>
+			<p>Year: {{moviveDesc}}</p>
+			<p>Year: {{director}}</p>
+			<p ng-repeat="writer in stars">Writer: {{writer.writer}}</p>
+			<p ng-repeat="star in stars">Stars: {{star.name}}</p>
 		</div>
 	</section>
