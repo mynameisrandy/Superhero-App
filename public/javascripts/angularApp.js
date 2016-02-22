@@ -1,5 +1,3 @@
-
-
 var superheroApp = angular.module('superheroApp', ['ui.router', 'ngAnimate']);
 
 //-------------------CONFIG---------------------//
@@ -24,6 +22,20 @@ superheroApp.config(['$stateProvider', '$urlRouterProvider', function($stateProv
 		controller: 'detailsController'
 	});
 
+	$stateProvider
+		.state('movieList', {
+		url: '/movieList',
+		templateUrl: 'views/movieList.html',
+		controller: 'movieController'
+	});
+
+	$stateProvider
+		.state('movieDetails', {
+		url: '/movieDetails/{movieId}',
+		templateUrl: 'views/movieDetails.html',
+		controller: 'moviedetailsController'
+	});
+
 	$urlRouterProvider.otherwise('/home');
 }]);
 
@@ -40,8 +52,8 @@ superheroApp.controller('ListController', ['$scope', '$http', function($scope, $
 		// ngAnimate 
 		$scope.pageClass = 'list';
 	});
-
 }]);
+
 
 // Details
 superheroApp.controller('detailsController', ['$scope', '$http','$stateParams', function($scope, $http, $stateParams) {
@@ -54,7 +66,37 @@ superheroApp.controller('detailsController', ['$scope', '$http','$stateParams', 
 		$scope.name = characters.data.name;
 		$scope.image = characters.data.image;
 		$scope.affiliation = characters.data.affiliation;
-		
+
+		// ngAnimate 
+		$scope.pageClass = 'details';
+	});
+}]);
+
+
+
+// List
+superheroApp.controller('movieController', ['$scope', '$http', function($scope, $http) {
+	$http.get('/movies').then(function(movies) {
+		console.log(movies.data);
+		$scope.movies = movies.data;
+		// ngAnimate 
+		// $scope.pageClass = 'list';
+	});
+}]);
+
+// Details
+superheroApp.controller('moviedetailsController', ['$scope', '$http','$stateParams', function($scope, $http, $stateParams) {
+	var ID = $stateParams.movieId;
+	$http.get('/movies/'+ID).then(function(movies) {
+		console.log(movies.data.name);
+
+		$scope.movieName = movies.data.movieName;
+		$scope.movieYear = movies.data.movieYear;
+		$scope.moviveDesc = movies.data.moviveDesc;
+		$scope.director = movies.data.director;
+		$scope.writers = movies.data.writers;
+		$scope.stars = movies.data.stars;
+
 		// ngAnimate 
 		$scope.pageClass = 'details';
 	});

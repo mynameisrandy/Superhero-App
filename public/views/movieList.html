@@ -7,7 +7,7 @@
 			<ul>
 				<li><a href="#/home">Home</a></li>
 				<li><a href="#/list">Characters</a></li>
-				<li><a href="#/movieList">Movies</a></li>
+				<li><a href="#/movies">Movies</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -15,14 +15,13 @@
 
 <section id="characters" class="row">
 	<center>
-		<h1>Characters List</h1>
+		<h1>Movies List</h1>
 		<div class="small-12 large-12 columns charList">
 			<ul>
-				<li data-ng-repeat="character in characters">
-					<a href="#/details/{{character._id}}">{{character.alias}}</a>
+				<li data-ng-repeat="movie in movies">
+					<a href="#/movieDetails/{{movie._id}}">{{movie.movieName}}</a>
 				</li>
 			</ul>
 		</div>
 	</center>
 </section>
-

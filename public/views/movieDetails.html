@@ -1,0 +1,13 @@
+<header id="header" class="row">
+		<div class="small-12 large-12 columns">
+			<h1 class="text-center">{{movieName}}</h1>
+			<p class="text-center"><a href="#/list">Back</a></p>
+		</div>
+	</header>
+
+	<section id="characterDetail" class="row animate">
+		<div class="small-12 large-12 columns">
+			<p>Year: {{movieYear}}</p>
+			<p ng-repeat="writer in writers">Writer: {{writer.writer}}</p>
+		</div>
+	</section>
