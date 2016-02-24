@@ -2,7 +2,7 @@
 	<h1 class="hidden">Movie Title</h1>
 		<div class="small-12 large-12 columns headerTitle">
 			<h1 class="text-center">{{movieName}}</h1>
-			<p class="text-center"><a href="#/list">Back</a></p>
+			<p class="text-center"><a href="#/movieList">Back</a></p>
 		</div>
 	</header>
 
@@ -13,11 +13,11 @@
 			<img ng-src="../images/{{movieImage}}" alt="film image" />
 		</div>
 		<div class="small-12 medium-8 columns">
-			<h1 class="hidden">Movie Details Infor</h1>
+			<h1 class="hidden">Movie Details Info</h1>
 			<p>Year: {{movieYear}}</p>
-			<p>Year: {{moviveDesc}}</p>
-			<p>Year: {{director}}</p>
-			<p ng-repeat="writer in stars">Writer: {{writer.writer}}</p>
+			<p>Description: {{moviveDesc}}</p>
+			<p>Director: {{director}}</p>
+			<p ng-repeat="writer in writers">Writer: {{writer.writer}}</p>
 			<p ng-repeat="star in stars">Stars: {{star.name}}</p>
 		</div>
 	</section>

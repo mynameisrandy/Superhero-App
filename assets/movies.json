@@ -50,5 +50,31 @@
 			{"name":"Ed Skrein","role":"Ajax","films":[{"film":"Self/less"},{"film":"Woman in Gold"},{"film":"Mississippi Grind"}]}, 
 			{"name":"Stefan Kapicic","role":"Colossus","films":[{"film":"Self/less"},{"film":"Woman in Gold"},{"film":"Mississippi Grind"}]}
 		]
+	},
+	{
+		"movieName":"Batman v Superman: Dawn of Justice",
+		"movieYear":"2016",
+		"movieImage":"batmansuperman.jpeg",
+		"moviveDesc":"Fearing the actions of Superman are left unchecked, Batman takes on Superman",
+		"director":"Zack Snyder",
+		"writers":[{"writer":"Chris Terrio"},{"writer":"David S. Goyer"}],
+		"stars":[
+			{"name":"Ryan Reynolds", "role":"Wade / Deadpool", "films":[{"film":"Self/less"},{"film":"Woman in Gold"},{"film":"Mississippi Grind"}]},
+			{"name":"Ed Skrein","role":"Ajax","films":[{"film":"Self/less"},{"film":"Woman in Gold"},{"film":"Mississippi Grind"}]}, 
+			{"name":"Stefan Kapicic","role":"Colossus","films":[{"film":"Self/less"},{"film":"Woman in Gold"},{"film":"Mississippi Grind"}]}
+		]
+	},
+	{
+		"movieName":"Man of Steel",
+		"movieYear":"2013",
+		"movieImage":"manofsteel.jpeg",
+		"moviveDesc":"Clark Kent one of the last of an extinguished race disguised as an unremarkable human",
+		"director":"Zack Snyder",
+		"writers":[{"writer":"Chris Terrio"},{"writer":"David S. Goyer"}],
+		"stars":[
+			{"name":"Ryan Reynolds", "role":"Wade / Deadpool", "films":[{"film":"Self/less"},{"film":"Woman in Gold"},{"film":"Mississippi Grind"}]},
+			{"name":"Ed Skrein","role":"Ajax","films":[{"film":"Self/less"},{"film":"Woman in Gold"},{"film":"Mississippi Grind"}]}, 
+			{"name":"Stefan Kapicic","role":"Colossus","films":[{"film":"Self/less"},{"film":"Woman in Gold"},{"film":"Mississippi Grind"}]}
+		]
 	}
 ]
