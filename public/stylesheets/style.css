@@ -11,7 +11,8 @@ body {
 /* HOME PAGE */
 #home
 {
-	padding-top: 2em;
+	padding-top: 10%;
+	padding-bottom: 10%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
@@ -201,3 +202,6 @@ body {
    	animation:zoomOut 0s  ease-in; 
 }
 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+}
