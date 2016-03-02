@@ -66,7 +66,9 @@ superheroApp.controller('detailsController', ['$scope', '$http','$stateParams', 
 		$scope.name = characters.data.name;
 		$scope.image = characters.data.image;
 		$scope.affiliation = characters.data.affiliation;
-
+		// $scope.affiliation.members = characters.data.affiliation.members;
+		// console.log($scope.affiliation.members);
+		
 		// ngAnimate 
 		$scope.pageClass = 'details';
 	});
