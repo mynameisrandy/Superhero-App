@@ -3,11 +3,13 @@ var superheroApp = angular.module('superheroApp', ['ui.router', 'ngAnimate']);
 //-------------------CONFIG---------------------//
 
 superheroApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+	// Home Page
 	$stateProvider.state('home',{
 		url:'/home',
 		templateUrl:'views/home.html'
 	});
 
+	// Characters
 	$stateProvider
 		.state('list', {
 		url: '/list',
@@ -22,6 +24,7 @@ superheroApp.config(['$stateProvider', '$urlRouterProvider', function($stateProv
 		controller: 'detailsController'
 	});
 
+	// Movies
 	$stateProvider
 		.state('movieList', {
 		url: '/movieList',
@@ -36,12 +39,26 @@ superheroApp.config(['$stateProvider', '$urlRouterProvider', function($stateProv
 		controller: 'moviedetailsController'
 	});
 
+	// Deadpools
+	$stateProvider
+		.state('deadpools', {
+		url: '/deadpools',
+		templateUrl: 'views/deadpools.html',
+		controller: 'deadpoolsCtrl'
+	});
+
+	$stateProvider
+		.state('deadpool', {
+		url: '/deadpool/{deadpoolId}',
+		templateUrl: 'views/deadpool.html',
+		controller: 'deadpoolCtrl'
+	});
+
 	$urlRouterProvider.otherwise('/home');
 }]);
 
 
 //-------------------CONTROLLERS---------------------//
-
 
 
 // List
@@ -64,6 +81,7 @@ superheroApp.controller('detailsController', ['$scope', '$http','$stateParams', 
 		$scope.alias = characters.data.alias;
 		$scope.city = characters.data.city;
 		$scope.name = characters.data.name;
+		$scope.bio = characters.data.bio;
 		$scope.image = characters.data.image;
 		$scope.affiliation = characters.data.affiliation;
 		// $scope.affiliation.members = characters.data.affiliation.members;
@@ -98,6 +116,36 @@ superheroApp.controller('moviedetailsController', ['$scope', '$http','$statePara
 		$scope.director = movies.data.director;
 		$scope.writers = movies.data.writers;
 		$scope.stars = movies.data.stars;
+
+		// ngAnimate 
+		$scope.pageClass = 'details';
+	});
+}]);
+
+
+// List
+superheroApp.controller('deadpoolsCtrl', ['$scope', '$http', function($scope, $http) {
+	$http.get('/deadpools').then(function(deadpools) {
+		console.log(deadpools.data);
+		$scope.deadpools = deadpools.data;
+		// ngAnimate 
+		$scope.pageClass = 'list';
+	});
+}]);
+
+
+// Details
+superheroApp.controller('deadpoolCtrl', ['$scope', '$http','$stateParams', function($scope, $http, $stateParams) {
+	var ID = $stateParams.deadpoolId;
+	$http.get('/deadpools/'+ID).then(function(deadpools) {
+		console.log(deadpools.data.name);
+
+		$scope.alias = deadpools.data.alias;
+		$scope.city = deadpools.data.city;
+		$scope.name = deadpools.data.name;
+		$scope.bio = deadpools.data.bio;
+		$scope.image = deadpools.data.image;
+		$scope.affiliation = deadpools.data.affiliation;
 
 		// ngAnimate 
 		$scope.pageClass = 'details';

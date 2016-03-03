@@ -1,0 +1,247 @@
+[
+  {
+    "alias": "Deadpool",
+    "name": {
+      "fname": "Wade",
+      "lname": "Wilson"
+    },
+    "city": "Somewhere in the Universes",
+    "image": "deadpool1.jpeg",
+    "bio": "Wade Wilson was an international assassin who had worked for various governments when he developed an aggressive cancer.",
+    "affiliation": [
+      {
+        "group": "Alternate Reality Versions",
+        "groupImage":"deadpoolcorps.jpeg",
+        "group_bio": "Alternate Reality Versions",
+        "members": [
+          {
+            "member_name": "Dead Man Wade",
+            "member_bio": "Made one of Apocalypse's chief assassins"
+          },
+          {
+            "member_name": "Deadpool Kid",
+            "member_bio": "Wade Wilson, also known as the Deadpool Kid."
+          },
+          {
+            "member_name": "Wadey Wilson",
+            "member_bio": "Wadey Wilson was a sergeant who after surviving death-defying action in the Wakanda Wars in the early nineties took the name Deadpool."
+          },
+          {
+            "member_name": "Wolverinepool",
+            "member_bio": "Wade Wilson was bonded with Adamantium to his skeleton through the Weapon X program."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "alias": "Dead Man Wade",
+    "name": {
+      "fname": "Wade",
+      "lname": "Wilson"
+    },
+    "city": "Canada",
+    "image": "deadpool-deadman.jpeg",
+    "bio": "Made one of Apocalypse's chief assassins",
+    "affiliation": [
+      {
+        "group": "Alternate Reality Versions",
+        "groupImage":"deadpoolcorps.jpeg",
+        "group_bio": "Alternate Reality Versions",
+        "members": [
+          {
+            "member_name": "Deadpool",
+            "member_bio": "I'M THE REAL ONE HERE"
+          },
+          {
+            "member_name": "Deadpool Kid",
+            "member_bio": "Wade Wilson, also known as the Deadpool Kid."
+          },
+          {
+            "member_name": "Wadey Wilson",
+            "member_bio": "Wadey Wilson was a sergeant who after surviving death-defying action in the Wakanda Wars in the early nineties took the name Deadpool."
+          },
+          {
+            "member_name": "Wolverinepool",
+            "member_bio": "Wade Wilson was bonded with Adamantium to his skeleton through the Weapon X program."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "alias": "Deadpool Kid",
+    "name": {
+      "fname": "Wade",
+      "lname": "Wilson"
+    },
+    "city": "Somewhere in the Universes",
+    "image": "deadpool-kid.jpeg",
+    "bio": "Wade Wilson, also known as the Deadpool Kid.",
+    "affiliation": [
+      {
+        "group": "Alternate Reality Versions",
+        "groupImage":"deadpoolcorps.jpeg",
+        "group_bio": "Alternate Reality Versions",
+        "members": [
+          {
+            "member_name": "Deadpool",
+            "member_bio": "I'M THE REAL ONE HERE"
+          },
+          {
+            "member_name": "Dead Man Wade",
+            "member_bio": "Made one of Apocalypse's chief assassins"
+          },
+          {
+            "member_name": "Wadey Wilson",
+            "member_bio": "Wadey Wilson was a sergeant who after surviving death-defying action in the Wakanda Wars in the early nineties took the name Deadpool."
+          },
+          {
+            "member_name": "Wolverinepool",
+            "member_bio": "Wade Wilson was bonded with Adamantium to his skeleton through the Weapon X program."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "alias": "Wadey Wilson",
+    "name": {
+      "fname": "Wade",
+      "lname": "Wilson"
+    },
+    "city": "Somewhere in the Universes",
+    "image": "deadpool-wadey.jpeg",
+    "bio": "Wadey Wilson was a sergeant who after surviving death-defying action in the Wakanda Wars in the early nineties took the name Deadpool.",
+    "affiliation": [
+      {
+        "group": "Alternate Reality Versions",
+        "groupImage":"deadpoolcorps.jpeg",
+        "group_bio": "Alternate Reality Versions",
+        "members": [
+          {
+            "member_name": "Deadpool",
+            "member_bio": "I'M THE REAL ONE HERE"
+          },
+          {
+            "member_name": "Dead Man Wade",
+            "member_bio": "Made one of Apocalypse's chief assassins"
+          },
+          {
+            "member_name": "DEADPOOL",
+            "member_bio": "DEADPOOL, DEADPOOL, DEADPOOOOOOOOOLLLLLLLLLLLLLLLLL"
+          },
+          {
+            "member_name": "Wolverinepool",
+            "member_bio": "Wade Wilson was bonded with Adamantium to his skeleton through the Weapon X program."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "alias": "Wolverinepool",
+    "name": {
+      "fname": "Wade",
+      "lname": "Wilson"
+    },
+    "city": "Somewhere in the Universes",
+    "image": "deadpool-Wolverinepool.jpeg",
+    "bio": "Wade Wilson was bonded with Adamantium to his skeleton through the Weapon X program.",
+    "affiliation": [
+      {
+        "group": "Alternate Reality Versions",
+        "groupImage":"deadpoolcorps.jpeg",
+        "group_bio": "Alternate Reality Versions",
+        "members": [
+          {
+            "member_name": "Deadpool",
+            "member_bio": "I'M THE REAL ONE HERE"
+          },
+          {
+            "member_name": "Dead Man Wade",
+            "member_bio": "Made one of Apocalypse's chief assassins"
+          },
+          {
+            "member_name": "DEADPOOL",
+            "member_bio": "DEADPOOL, DEADPOOL, DEADPOOOOOOOOOLLLLLLLLLLLLLLLLL"
+          },
+          {
+            "member_name": "Somewhere in the Multi Universes said Deadpool",
+            "member_bio": "Be right back......................"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "alias": "DO NOT CLICK",
+    "name": {
+      "fname": "#Wade",
+      "lname": "#Wilson"
+    },
+    "city": "CAN'T TELL YOU",
+    "image": "deadpool-pool2.jpeg",
+    "bio": "#hashtag Deadpool",
+    "affiliation": [
+      {
+        "group": "HASHTAG DEADPOOL",
+        "groupImage":"deadpool.jpeg",
+        "group_bio": "#hashtag deadpool.gif #hashtag deadpool.jpeg",
+        "members": [
+          {
+            "member_name": "Deadpool",
+            "member_bio": "I'M THE REAL ONE HERE"
+          },
+          {
+            "member_name": "Dead Man Wade",
+            "member_bio": "Made one of Apocalypse's chief assassins"
+          },
+          {
+            "member_name": "DEADPOOL",
+            "member_bio": "DEADPOOL, DEADPOOL, DEADPOOOOOOOOOLLLLLLLLLLLLLLLLL"
+          },
+          {
+            "member_name": "Somewhere in the Multi Universes said Deadpool",
+            "member_bio": "Be right back......................"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "alias": "WadeWilson.jpeg",
+    "name": {
+      "fname": "#Wade",
+      "lname": "#Wilson"
+    },
+    "city": "................... yeah I'm kind of lost here",
+    "image": "deadpool-pool3.jpeg",
+    "bio": "............. Sorry I dont't know you",
+    "affiliation": [
+      {
+        "group": "Just Deadpool",
+        "groupImage":"deadpool.jpeg",
+        "group_bio": "#hashtag deadpool.gif #hashtag deadpool.jpeg",
+        "members": [
+          {
+            "member_name": "Deadpool",
+            "member_bio": "I'M THE REAL ONE HERE"
+          },
+          {
+            "member_name": "Dead Man Wade",
+            "member_bio": "Made one of Apocalypse's chief assassins"
+          },
+          {
+            "member_name": "DEADPOOL",
+            "member_bio": "DEADPOOL, DEADPOOL, DEADPOOOOOOOOOLLLLLLLLLLLLLLLLL"
+          },
+          {
+            "member_name": "Somewhere in the Multi Universes said Deadpool",
+            "member_bio": "Be right back......................"
+          }
+        ]
+      }
+    ]
+  }
+]

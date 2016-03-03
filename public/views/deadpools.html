@@ -17,14 +17,14 @@
 </header>
 
 <section id="characters" class="row">
-	<h1 class="hidden">Characters List</h1>
+	<h1 class="hidden">Deadpool List</h1>
 	<center>
-		<h1>Characters List</h1>
-		<div class="small-12 medium-4 columns charList" data-ng-repeat="character in characters">
+		<h1>Deadpool Corps</h1>
+		<div class="small-12 medium-4 columns charList" data-ng-repeat="deadpool in deadpools">
 			<figure class="charImage">
-				<img ng-src="../images/{{character.image}}" alt="character image" />
+				<img ng-src="../images/{{deadpool.image}}" alt="character image" />
 			</figure>
-			<p><a href="#/details/{{character._id}}">{{character.alias}}</a></p>
+			<p><a href="#/deadpool/{{deadpool._id}}">{{deadpool.alias}}</a></p>
 		</div>
 	</center>
 </section>

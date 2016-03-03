@@ -2,8 +2,10 @@ var express = require('express');
 var path = require('path');
 var router = express.Router();
 var mongoose = require('mongoose');
+
 var Character = require('../models/Character');
 var Movie = require('../models/Movie');
+var Deadpool = require('../models/Deadpool');
 
 // Home Page
 router.get('/', function(req, res) {
@@ -48,6 +50,28 @@ router.get('/movies/:id', function(req, res, next) {
 		res.json(movie);
 	});
 });
+
+
+// Get Deadpools
+router.get('/deadpools', function(req, res, next) {
+	// Character Model
+	Deadpool.find(function(err, deadpools) {
+		if(err) return(err);
+		res.json(deadpools);
+	});
+});
+
+
+// Get Deadpool
+router.get('/deadpools/:id', function(req, res, next) {
+	// Character Model
+	Deadpool.findById(req.params.id, function(err, deadpool) {
+		if(err) return(err);
+		res.json(deadpool);
+	});
+});
+
+
 
 
 module.exports = router;

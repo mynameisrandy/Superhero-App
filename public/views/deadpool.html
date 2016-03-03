@@ -2,7 +2,7 @@
 	<h1 class="hidden">Character Name</h1>
 		<div class="small-12 large-12 columns headerTitle">
 			<h1 class="text-center">{{alias}}</h1>
-			<p class="text-center"><a href="#/list">Back</a></p>
+			<p class="text-center"><a href="#/deadpools">Back</a></p>
 		</div>
 </header>
 
@@ -19,10 +19,7 @@
 			<p>Bio: {{ bio }}</p>
 			<div ng-repeat="affiliations in affiliation">
 				<p>Affiliations: {{ affiliations.group }} 
-				<p>Information: {{ affiliations.group_bio }}</p>
+				<p>Bio: {{ affiliations.group_bio }}</p>
 			</p>
 		</div>
-
 	</section>
-
-	
