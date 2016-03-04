@@ -129,7 +129,7 @@ superheroApp.controller('deadpoolsCtrl', ['$scope', '$http', function($scope, $h
 		console.log(deadpools.data);
 		$scope.deadpools = deadpools.data;
 		// ngAnimate 
-		$scope.pageClass = 'list';
+		$scope.pageClass = 'random';
 	});
 }]);
 
@@ -138,7 +138,10 @@ superheroApp.controller('deadpoolsCtrl', ['$scope', '$http', function($scope, $h
 superheroApp.controller('deadpoolCtrl', ['$scope', '$http','$stateParams', function($scope, $http, $stateParams) {
 	var ID = $stateParams.deadpoolId;
 	$http.get('/deadpools/'+ID).then(function(deadpools) {
-		console.log(deadpools.data.name);
+		// console.log(deadpools.data.name);
+		// To get all the deadpool details data
+		$scope.deadpool = deadpools.data;
+		console.log($scope.deadpool);
 
 		$scope.alias = deadpools.data.alias;
 		$scope.city = deadpools.data.city;
@@ -146,8 +149,8 @@ superheroApp.controller('deadpoolCtrl', ['$scope', '$http','$stateParams', funct
 		$scope.bio = deadpools.data.bio;
 		$scope.image = deadpools.data.image;
 		$scope.affiliation = deadpools.data.affiliation;
-
+		
 		// ngAnimate 
-		$scope.pageClass = 'details';
+		$scope.pageClass = 'deadpool';
 	});
 }]);

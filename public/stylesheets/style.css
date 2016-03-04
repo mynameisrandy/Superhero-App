@@ -11,8 +11,7 @@ body {
 /* HOME PAGE */
 #home
 {
-	padding-top: 10%;
-	padding-bottom: 10%;
+	padding-top: 7em;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
@@ -25,6 +24,14 @@ body {
 	text-transform: uppercase;
 	color: #242424;
 	letter-spacing: 2px;
+	font-size: 1.5em;
+}
+
+#home h3
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 1em;	
 }
 
 #homeBut a
@@ -33,11 +40,14 @@ body {
 	font-weight: 300;	
 	text-transform: uppercase;
 	color: #242424;
+	font-size: 1em;
 }
 
 .homeBut
 {
-	padding-top: 2em;
+	padding-top: 1em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
 }
 
 .homeBut a
@@ -47,7 +57,7 @@ body {
 
 #homeBut a:hover
 {
-	color: #2196F3;
+	color: #242424;
 }
 
 #guide
@@ -154,23 +164,35 @@ body {
 }
 
 /* details PAGE*/
-#characterDetail
-{
-	padding-top: 2em;
-	padding-bottom: 2em;
-}
+	#characterDetail
+	{
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
 
-.charImage img
-{
+	.charImage img
+	{
 	-moz-box-shadow: 0px 1px 7px #000000;
 	-webkit-box-shadow: 0px 1px 7px #000000;
 	box-shadow: 0px 1px 7px #000000;
-}
+	}
+	.charInfo
+	{
+		padding-top: 3em;
+	}
+
+	.charInfo p
+	{
+		font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+		color:  #242424;
+		font-size: 1em;
+	}
+
 
 /*----------------ngAnimate----------------*/
 .ng-enter           
 { 
-    /*animation: bounceIn 0.5s  ease-in; */
     animation: fadeIn 0.5s  ease-in;
     animation:fadeInLeft 0.5s  ease-in;
 }
@@ -181,6 +203,8 @@ body {
 }
 
 /* List Page */
+
+
 .list.ng-enter         
 { 
     animation: fadeIn 0.5s  ease-in;
@@ -201,6 +225,99 @@ body {
    	animation:zoomOut 0s  ease-in; 
 }
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+.random.ng-enter
+{
+	animation:	fadeIn 1s  ease-in; 
+}
+
+.random.ng-leave
+{
+	animation:	fadeOut 0.6s  ease-in; 
+}
+
+.deadpool.ng-enter
+{
+	animation:	tada 0.5s  ease-in; 
+}
+
+.deadpool.ng-leave
+{
+	animation:	rollout 0.5s  ease-in; 
+}
+
+
+/* MEDIUM */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	/*HOME PAGE*/
+	#home
+	{
+	 padding-top: 8em;	
+	}
+	
+	#home img
+	{
+		width: 100%;
+	}
+	
+	#home h1
+	{
+		font-size: 1.7em;
+	}
+	
+	#home h3
+	{
+		font-size: 1.4em;
+	}
+	
+	#home a
+	{
+		font-size: 1em;
+	}
+	
+/* 	Character Page */
+
+/* 	 Character Details */
+	.charInfo
+	{
+		padding-top: 0;
+	}
+	.charInfo p
+	{
+		font-size: 90%;
+	}
+
+
 
 }
+
+/* LARGE */
+@media only screen and (min-width: 64.063em) {
+	#home
+	{
+		padding-top: em;
+	}
+
+	#home h1
+	{
+		font-size: 2em;
+	}
+	
+	#home h3
+	{
+		font-size: 1.8em;
+	}
+	
+	#home a
+	{
+		font-size: 1.2em;
+	}
+
+
+	/* 	 Character Details */
+	.charInfo
+	{
+		padding-top: 0;
+	}
+}
+
