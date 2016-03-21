@@ -18,6 +18,17 @@ mongoose.connect('mongodb://localhost/meanapp', function(err) {
   }
 });
 
+// var mongoose = require('mongoose');
+// mongoose.connect('mongodb://superheroapp-db:1skyline@ds061218.mlab.com:61218/superheroapp-db', function(err) {
+//   if(err) {
+//     console.log('error connecting', err);
+//   } else {
+//     console.log('connected');
+//   }
+// });
+
+
+
 
 // ROUTES
 // var routes = require('./routes/routes');
