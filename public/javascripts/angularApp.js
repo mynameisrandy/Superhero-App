@@ -62,64 +62,113 @@ superheroApp.config(['$stateProvider', '$urlRouterProvider', function($stateProv
 
 
 // List
-superheroApp.controller('ListController', ['$scope', '$http', function($scope, $http) {
-	$http.get('/characters').then(function(characters) {
-		console.log(characters.data);
-		$scope.characters = characters.data;
-		// ngAnimate 
-		$scope.pageClass = 'list';
-	});
+superheroApp.controller('ListController', ['$scope', 'dataFactory', function($scope, dataFactory) {
+	
+	dataFactory.getChars().success(function(data) {
+        $scope.characters = data;
+        console.log($scope.characters);
+		// ngAnimate
+        $scope.pageClass = 'list';
+   	});
+
+	// $http.get('/characters').then(function(characters) {
+	// 	console.log(characters.data);
+	// 	$scope.characters = characters.data;
+	// 	// ngAnimate 
+	// 	$scope.pageClass = 'list';
+	// })
+
 }]);
 
-
 // Details
-superheroApp.controller('detailsController', ['$scope', '$http','$stateParams', function($scope, $http, $stateParams) {
-	var ID = $stateParams.characterId;
-	$http.get('/characters/'+ID).then(function(characters) {
-		console.log(characters.data.name);
-
-		$scope.alias = characters.data.alias;
-		$scope.city = characters.data.city;
-		$scope.name = characters.data.name;
-		$scope.bio = characters.data.bio;
-		$scope.image = characters.data.image;
-		$scope.affiliation = characters.data.affiliation;
+superheroApp.controller('detailsController', ['$scope', 'dataFactory', '$stateParams', function($scope, dataFactory, $stateParams) {
+	
+	var id = $stateParams.characterId;
+	
+	dataFactory.getChar(id).success(function(characters) {
+        $scope.alias = characters.alias;
+       	console.log($scope.alias);
+        $scope.city = characters.city;
+		$scope.name = characters.name;
+		$scope.bio = characters.bio;
+		$scope.image = characters.image;
+		$scope.affiliation = characters.affiliation;
 		// $scope.affiliation.members = characters.data.affiliation.members;
 		// console.log($scope.affiliation.members);
+		// ngAnimate
+        $scope.pageClass = 'list';
+  	});
+
+
+
+	// $http.get('/characters/'+ID).then(function(characters) {
+	// 	console.log(characters.data.name);
+
+	// 	$scope.alias = characters.data.alias;
+		// $scope.city = characters.data.city;
+		// $scope.name = characters.data.name;
+		// $scope.bio = characters.data.bio;
+		// $scope.image = characters.data.image;
+		// $scope.affiliation = characters.data.affiliation;
+		// // $scope.affiliation.members = characters.data.affiliation.members;
+		// // console.log($scope.affiliation.members);
 		
-		// ngAnimate 
-		$scope.pageClass = 'details';
-	});
+	// 	// ngAnimate 
+	// 	$scope.pageClass = 'details';
+	// });
 }]);
 
 
 // List
-superheroApp.controller('movieController', ['$scope', '$http', function($scope, $http) {
-	$http.get('/movies').then(function(movies) {
-		console.log(movies.data);
-		$scope.movies = movies.data;
-		// ngAnimate 
-		$scope.pageClass = 'list';
-	});
+superheroApp.controller('movieController', ['$scope', 'dataFactory', function($scope, dataFactory) {
+	
+	dataFactory.getMovies().success(function(movies) {
+        $scope.movies = movies;
+        console.log($scope.movies);
+		// ngAnimate
+        $scope.pageClass = 'list';
+   	});
+
+	// $http.get('/movies').then(function(movies) {
+	// 	console.log(movies.data);
+	// 	$scope.movies = movies.data;
+	// 	// ngAnimate 
+	// 	$scope.pageClass = 'list';
+	// });
+
 }]);
 
 // Details
-superheroApp.controller('moviedetailsController', ['$scope', '$http','$stateParams', function($scope, $http, $stateParams) {
-	var ID = $stateParams.movieId;
-	$http.get('/movies/'+ID).then(function(movies) {
-		console.log(movies.data.name);
+superheroApp.controller('moviedetailsController', ['$scope', 'dataFactory','$stateParams', function($scope, dataFactory, $stateParams) {
+	
+	var id = $stateParams.movieId;
 
-		$scope.movieName = movies.data.movieName;
-		$scope.movieYear = movies.data.movieYear;
-		$scope.movieImage = movies.data.movieImage;
-		$scope.moviveDesc = movies.data.moviveDesc;
-		$scope.director = movies.data.director;
-		$scope.writers = movies.data.writers;
-		$scope.stars = movies.data.stars;
+	dataFactory.getMovie(id).success(function(movies) {
+		$scope.movieName = movies.movieName;
+		$scope.movieYear = movies.movieYear;
+		$scope.movieImage = movies.movieImage;
+		$scope.moviveDesc = movies.moviveDesc;
+		$scope.director = movies.director;
+		$scope.writers = movies.writers;
+		$scope.stars = movies.stars;
+	 	// ngAnimate 
+	 	$scope.pageClass = 'details';
+   	});
 
-		// ngAnimate 
-		$scope.pageClass = 'details';
-	});
+	// var ID = $stateParams.movieId;
+	// $http.get('/movies/'+ID).then(function(movies) {
+	// 	console.log(movies.data.name);
+	// 	$scope.movieName = movies.data.movieName;
+	// 	$scope.movieYear = movies.data.movieYear;
+	// 	$scope.movieImage = movies.data.movieImage;
+	// 	$scope.moviveDesc = movies.data.moviveDesc;
+	// 	$scope.director = movies.data.director;
+	// 	$scope.writers = movies.data.writers;
+	// 	$scope.stars = movies.data.stars;
+	// 	// ngAnimate 
+	// 	$scope.pageClass = 'details';
+	// });
+
 }]);
 
 
