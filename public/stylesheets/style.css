@@ -11,7 +11,7 @@ body {
 /* HOME PAGE */
 #home
 {
-	padding-top: 7em;
+	padding-top: 5em;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
@@ -252,7 +252,7 @@ body {
 	/*HOME PAGE*/
 	#home
 	{
-	 padding-top: 8em;	
+	 padding-top: 5em;	
 	}
 	
 	#home img
@@ -295,9 +295,12 @@ body {
 @media only screen and (min-width: 64.063em) {
 	#home
 	{
-		padding-top: em;
+		padding-top: 3em;
 	}
-
+	#home img
+	{
+		width: 70%;
+	}
 	#home h1
 	{
 		font-size: 2em;

@@ -6,7 +6,7 @@ superheroApp.factory('dataFactory', ['$http', function($http) {
 
 	// Create an object
 	var _dataFactory = {};
-
+	
 	// // Get Characters
 	// _dataFactory.getChars = function() {
 	// 	return $http.get(urlBase + '/characters');
@@ -42,7 +42,7 @@ superheroApp.factory('dataFactory', ['$http', function($http) {
 
 	// Get Character
 	_dataFactory.getChar = function(id) {
-		return $http.get'/characters/' + id).error(function(data) {
+		return $http.get('/characters/' + id).error(function(data) {
             console.log('I cant get character', data);
       });
 	};
@@ -59,8 +59,6 @@ superheroApp.factory('dataFactory', ['$http', function($http) {
             console.log('I cant get movie', data);
       	});
 	};
-
-
 
 	// Return the object
 	return _dataFactory;
