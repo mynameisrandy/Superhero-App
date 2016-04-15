@@ -70,14 +70,6 @@ superheroApp.controller('ListController', ['$scope', 'dataFactory', function($sc
 		// ngAnimate
         $scope.pageClass = 'list';
    	});
-
-	// $http.get('/characters').then(function(characters) {
-	// 	console.log(characters.data);
-	// 	$scope.characters = characters.data;
-	// 	// ngAnimate 
-	// 	$scope.pageClass = 'list';
-	// })
-
 }]);
 
 // Details
@@ -99,23 +91,6 @@ superheroApp.controller('detailsController', ['$scope', 'dataFactory', '$statePa
         $scope.pageClass = 'list';
   	});
 
-
-
-	// $http.get('/characters/'+ID).then(function(characters) {
-	// 	console.log(characters.data.name);
-
-	// 	$scope.alias = characters.data.alias;
-		// $scope.city = characters.data.city;
-		// $scope.name = characters.data.name;
-		// $scope.bio = characters.data.bio;
-		// $scope.image = characters.data.image;
-		// $scope.affiliation = characters.data.affiliation;
-		// // $scope.affiliation.members = characters.data.affiliation.members;
-		// // console.log($scope.affiliation.members);
-		
-	// 	// ngAnimate 
-	// 	$scope.pageClass = 'details';
-	// });
 }]);
 
 
@@ -128,13 +103,6 @@ superheroApp.controller('movieController', ['$scope', 'dataFactory', function($s
 		// ngAnimate
         $scope.pageClass = 'list';
    	});
-
-	// $http.get('/movies').then(function(movies) {
-	// 	console.log(movies.data);
-	// 	$scope.movies = movies.data;
-	// 	// ngAnimate 
-	// 	$scope.pageClass = 'list';
-	// });
 
 }]);
 
@@ -154,20 +122,6 @@ superheroApp.controller('moviedetailsController', ['$scope', 'dataFactory','$sta
 	 	// ngAnimate 
 	 	$scope.pageClass = 'details';
    	});
-
-	// var ID = $stateParams.movieId;
-	// $http.get('/movies/'+ID).then(function(movies) {
-	// 	console.log(movies.data.name);
-	// 	$scope.movieName = movies.data.movieName;
-	// 	$scope.movieYear = movies.data.movieYear;
-	// 	$scope.movieImage = movies.data.movieImage;
-	// 	$scope.moviveDesc = movies.data.moviveDesc;
-	// 	$scope.director = movies.data.director;
-	// 	$scope.writers = movies.data.writers;
-	// 	$scope.stars = movies.data.stars;
-	// 	// ngAnimate 
-	// 	$scope.pageClass = 'details';
-	// });
 
 }]);
 
@@ -191,7 +145,6 @@ superheroApp.controller('deadpoolCtrl', ['$scope', '$http','$stateParams', funct
 		// To get all the deadpool details data
 		$scope.deadpool = deadpools.data;
 		console.log($scope.deadpool);
-
 		$scope.alias = deadpools.data.alias;
 		$scope.city = deadpools.data.city;
 		$scope.name = deadpools.data.name;
